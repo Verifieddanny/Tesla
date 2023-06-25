@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
+  user-select: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+/* a {
+  @apply scroll-smooth;
+} */
+.navbar {
+  @apply fixed top-0 z-10 flex items-center justify-between w-full  h-[5.4rem] p-[3.2rem] bg-transparent backdrop-blur-2xl;
+}
+.navbar-links {
+  @apply text-2xl font-semibold text-[#181b21] mx-[0.8rem] px-[0.4rem] py-[0.9rem] rounded-[0.8rem] bg-transparent hover:bg-[#181b21] hover:bg-opacity-10 transition-all duration-700;
+}
+.img_cover {
+  @apply w-screen h-screen relative;
+}
+
+.img_class {
+  @apply w-full h-full object-cover;
+}
+.car_description {
+  @apply absolute top-[20%] left-[50%] text-center;
+}
+.text_translate {
+  transform: translate(-50%, -50%);
+}
+.thick_text {
+  @apply text-[4rem] text-[#393c41] font-semibold;
+}
+.little_text {
+  @apply text-[#4c450] text-2xl;
+}
+.btn_container {
+  @apply absolute top-[85%] left-[50%] flex flex-col lg:flex-row;
+}
+.btn {
+  @apply text-2xl text-white bg-[#171a20] font-medium uppercase my-2 py-[0.4rem] px-[2.4rem] rounded-[3.2rem] w-[25.5rem] h-16 bg-opacity-80 hover:text-[#393141] hover:bg-white hover:bg-opacity-60 transition-all duration-700;
+}
+.btn_inventory {
+  @apply text-[#393141] bg-white bg-opacity-60 lg:ml-8 hover:text-white hover:bg-[#171a20] transition-all duration-700;
+}
+.btn_shop {
+  @apply text-[#393141] bg-white  lg:ml-8 hover:text-white hover:bg-[#171a20] transition-all duration-700 rounded-[0.8rem];
+}
+.down_svg {
+  @apply block w-full h-20 mx-auto absolute top-[95%] animate-bounce;
+}
+.menuContainer {
+  @apply lg:hidden fixed z-20 top-[0]  flex justify-end w-full bg-transparent backdrop-blur-sm translate-x-full transition-all duration-500 h-screen  pl-[1rem];
+}
+.mobileMenu {
+  @apply relative flex  flex-col w-[50%] bg-white  transition-all duration-500 h-[100%]  pt-[5.6rem];
+}
+
+.menuContainer.active {
+  @apply translate-x-0;
+}
+.close {
+  @apply absolute top-[2rem] right-[2rem]  rounded-[0.8rem] bg-transparent hover:bg-[#181b21] hover:bg-opacity-10 transition-all duration-700 cursor-pointer  flex items-center justify-center w-[4rem] h-[4rem];
+}
+
+.description {
+  @apply absolute top-[70%] left-[50%] flex  flex-col text-center items-center;
+}
+.shop_section {
+  @apply w-screen h-full overflow-hidden;
+}
+
+.little_text_shop {
+  @apply font-medium text-white  text-[2rem];
+}
+.thick_text_shop {
+  @apply text-[4rem] text-white font-semibold;
+}
+.carouselDiv {
+  @apply relative w-[300%] object-cover flex animate-moves-left;
+}
+.relDIv {
+  @apply w-[100vw] h-screen relative flex flex-1;
+}
+.relDIv_shop {
+  @apply w-[100vw] h-screen relative;
+}
+.carouselMain {
+  @apply w-screen overflow-x-scroll h-[37rem] py-[2rem];
+}
+.catelouge {
+  @apply w-[13.17%] h-full object-cover flex flex-col justify-between;
+}
+.catelouge-container {
+  @apply relative h-[32rem] flex w-[205rem] gap-x-8 px-[2rem];
+}
+.shopImage {
+  @apply drop-shadow-xl hover:scale-110 transition-all duration-500 rounded-[1rem];
+}
+
+.desripo {
+  @apply text-[4rem] text-[#181b21]
+ font-semibold text-5xl;
+}
+.btn_shop_apparel {
+  @apply border-[#181b21] border-2;
+}
+.apparel {
+  @apply w-screen md:h-screen flex flex-col justify-between px-[2rem] md:flex-row;
+}
+.inners {
+  @apply w-full md:w-[32.5%] h-screen md:h-full  relative;
+}
+.inners_img {
+  @apply mix-blend-multiply object-cover bg-center w-full h-full;
+}
